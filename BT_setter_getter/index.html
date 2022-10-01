@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor(name){
+                this.name = name;
+            }
+            get(){
+                return this.name;
+            }
+            set(name){
+                return this.name = name;
+            }
+            walk(){
+
+            }
+        }
+        class Programmer extends Person{
+            
+            setLanguage(language){
+                return this.language = language;
+            }
+            getLanguage(){
+                return this.language;
+            }
+            writeCode(){
+
+            }
+        }
+        let person = new Person('phong');
+        person.get();
+        // console.log(person);
+
+        let phong = new Programmer();
+        phong.setLanguage('javascript');
+        phong.name = 'phongdeptrai'
+        console.log(phong);
+        
+    </script>
+</body>
+</html>
